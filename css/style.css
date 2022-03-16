@@ -323,7 +323,7 @@ main {
   flex-direction: column;
 }
 .port-item{
-  margin: 50vh 10vw 0 10vw;
+  margin: 10vh 10vw 0 10vw;
   height: 370px;
   width: 620px;
  background-color: rgb(27, 27, 27);
@@ -353,6 +353,7 @@ main {
   justify-content:  flex-end;
 }
 .scroll{
+  padding-top: 15vh;
   width: 100%;
   height: auto;
   display: flex;
@@ -404,23 +405,45 @@ main {
 /* Portfolio-Mobile */
 @media (max-width: 480px) {
     
-  .portfolio-grid-containter {
+  .port-cont{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .izq{
+    display: flex;
+    justify-content:  center;
+  }
+  .der{
+    display: flex;
+    justify-content:  center;
+  }
+  .port-item{
+    margin: 10vh 10vw 0 10vw;
+    height: auto;
+    width: 80vw;
+   background-color: rgb(27, 27, 27);
+  
+  }
+  .image-port{
+    width: 100%;
+    margin: 0vw 0vw;
+    padding: 2vw 2vw 0vw 2vw;
+  }
+  .p-port{
+    font-size: 2vw;
+    text-align: center;
+    color: #fff;
+    padding: 1vw 0 1vw 0;
+  }
+  .text-cont{
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    margin:0;
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: repeat(8, 90vw);
-    justify-content: center;
-    grid-row-gap: 2vw;
-    grid-template-areas:
-      "image1"
-      "image2"
-      "image3"
-      "image4"
-      "image5"
-      "image6"
-      "image7"
-      "image8";
+    padding: 0 10px;
   }
   
 }
@@ -428,24 +451,47 @@ main {
 @media (min-width: 481px) and (max-width: 900px){
     
     
-      .portfolio-grid-containter {
+        .port-cont{
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+      }
+      .izq{
+        display: flex;
+        justify-content:  center;
+      }
+      .der{
+        display: flex;
+        justify-content:  center;
+      }
+      .port-item{
+        margin: 10vh;
+        height: auto;
+        width: 80vw;
+       background-color: rgb(27, 27, 27);
+      
+      }
+      .image-port{
+        width: 100%;
+        margin: 0vw 0vw;
+        padding: 2vw 2vw 0vw 2vw;
+      }
+      .p-port{
+        font-size: 2vw;
+        text-align: center;
+        color: #fff;
+        padding: 1vw 0 1vw 0;
+      }
+      .text-cont{
+        background-color: rgb(27, 27, 27);
+        position: absolute;
+        margin:0;
         width: 100%;
         height: auto;
-        display: grid;
-        grid-template-columns: 40vw 40vw;
-        grid-template-rows: repeat(6, 40vw);
-        justify-content: space-evenly;
-        grid-row-gap: 2vw;
-        grid-template-areas:
-          "image1 image2"
-          "image3 image3"
-          "image3 image3"
-          "image4 image5"
-          "image6 image7"
-          "image8 image8"
-          ;
+        padding: 0 10vw;
       }
-
+  
 }
 /* Portfolio-notebook */
 /* QUeda defiunido en los anteriores media */
